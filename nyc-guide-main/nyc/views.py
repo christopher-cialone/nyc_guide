@@ -27,11 +27,10 @@ class ActivityView(View):
         )
        
 
-# Added this, but too be honest Im not quite sure of myself here, also added the venue.html file to coinside with this
 class VenueView(View):
-   def get(self, request, borough, activity, venue):
+    def get(self, request, borough, activity, venue):
         return render(
-            request = request,
-            template_name= 'venue.html',
-            context={'venues' :  boroughs[borough][activity].keys(), 'borough' : borough }
+            request=request,
+            template_name='venue.html',
+            context={'borough' : borough, 'activity' : activity, 'venue' : venue, 'description':boroughs[borough][activity][venue].get('description')}
         )
