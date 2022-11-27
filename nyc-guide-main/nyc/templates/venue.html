@@ -1,0 +1,11 @@
+<h1>{{ borough | title }}</h1>
+
+<ul>
+    {% for venue in venues %}
+    <li>
+        <a href="{% url 'venue' borough activity venue %} "
+            >{{ venue|title }}</a
+        >
+    </li>
+    {% endfor %}
+</ul>
