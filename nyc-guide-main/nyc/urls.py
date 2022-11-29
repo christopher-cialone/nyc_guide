@@ -1,7 +1,10 @@
 from django.urls import path
 
 from nyc.views import CityView, BoroughView, ActivityView, VenueView
-# The url patterns correspond with the views imported with the same name
+
+
+'''The url patterns correspond with the views, in views.py, imported with the same name'''
+
 urlpatterns = [
     # all the urls are for free
     path('', CityView.as_view(), name='city'),
