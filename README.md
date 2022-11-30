@@ -21,7 +21,7 @@ This project is structured as a guide to the Boros of New York City, where each 
 
 7. **Run** pip freeze > requirements.txt (take a look at the new requirements file that popped up!) NOTE: this 'freezes' all of the libraries/frameworks required to make the project work as expected at their current version, so that you can easily download the requirements on a different computer.
 
-8. ##And now## From your virtual environment run $ python3 manage.py runserver
+8. ##Now## From your virtual environment run $ python3 manage.py runserver
 
 9. Hover over Starting development server at http://127.0.0.1:8000/ and hold command and click with the mouse, which will take you to the guide! 
 
